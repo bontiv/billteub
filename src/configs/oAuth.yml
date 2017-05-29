@@ -1,0 +1,18 @@
+## YAML Template.
+---
+name: oAuth
+label: Configuration SSO
+fields:
+    client_id:
+        type: var
+        label: Client ID
+        default: billeterie
+    client_secret:
+        type: var
+        label: Client Secret
+        default: hopping
+    client_url:
+        type: var
+        label: API Endpoint
+        default: http://intra.epitanime.com/api.php
+        

@@ -1,0 +1,21 @@
+name: contacts
+key: ctx_id
+fields:
+    ctx_id:
+        type: auto_int
+    ctx_firstname:
+        type: var
+        label: Prenom
+    ctx_lastname:
+        type: var
+        label: Nom
+    ctx_email:
+        type: var
+        label: Adresse email
+    ctx_phone:
+        type: var
+        label: Téléphone
+    ctx_user:
+        type: external
+        table: users
+        label: Utilisateur

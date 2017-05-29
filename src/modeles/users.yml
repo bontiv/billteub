@@ -1,0 +1,33 @@
+## Table users
+name: users
+key: user_id
+fields:
+  user_id:
+    type: auto_int
+  user_intra:
+    type: int
+    label: Utilisateur intra
+  user_ctx:
+    type: external
+    table: contacts
+    display: %ctx_firstname% %ctx_lastname%
+    label: Information de contact
+    null: true
+  user_data:
+    type: text
+    label: Données utilisateur
+  user_acl:
+      type: enum
+      label: Override ACL
+      default: INTRA
+      items:
+          INTRA: Depuis l'intra
+          ADMINISTRATOR: Administrateur
+          GUEST: Utilisateur connecté
+          USER: Membre asso
+
+
+indexes:
+  user_intra:
+    type: unique
+    fields: [user_intra]

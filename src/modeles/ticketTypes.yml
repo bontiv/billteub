@@ -1,0 +1,59 @@
+## YAML Template.
+---
+name: ticketTypes
+key: ttype_id
+fields:
+    ttype_id:
+        type: auto_int
+    ttype_event:
+        type: external
+        table: events
+        display: %event_title%
+        label: Événement
+    ttype_title:
+        type: var
+        label: Titre
+    ttype_desc:
+        type: text
+        label: Description
+    ttype_maxTickets:
+        type: int
+        label: Nombre de tickets max
+    ttype_price:
+        type: int
+        label: Montant (cents)
+    ttype_payconf:
+        type: external
+        table: paymentConfigs
+        display: %pc_title%
+    ttype_moderate:
+        type: int
+        label: Temps de modération (h)
+    ttype_commission:
+        type: enum
+        label: Commission payé par
+        default: BUYER
+        items:
+            BUYER: Acheteur
+            SELLER: Vendeur
+    ttype_duration:
+        type: int
+        label: Temps dans le panier
+    ttype_delegation:
+        type: enum
+        label: Délégation
+        default: NONE
+        items:
+            NONE:  Aucune délégation
+            GUIDE: Accompagnant
+            GUEST: Invité
+    ttype_access:
+        type: enum
+        label: Visibilité
+        default: ADMINISTRATOR
+        items:
+            ADMINISTRATOR: Administrateurs
+            USER: Membres
+            GUEST: Utilisateurs connectés
+            ANNONYMOUS: Tout le monde
+        

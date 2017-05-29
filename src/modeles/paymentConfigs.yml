@@ -1,0 +1,10 @@
+## YAML Template.
+---
+name: paymentConfigs
+key: pc_id
+fields:
+    pc_id:
+        type: auto_int
+    pc_title:
+        type: var
+        label: Titre

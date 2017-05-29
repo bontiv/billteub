@@ -1,0 +1,16 @@
+## YAML Template.
+---
+name: paymentItems
+key: pi_id
+fields:
+    pi_id:
+        type: auto_int
+    pi_payment:
+        type: external
+        table: payments
+        display: %pay_id%
+    pi_ticket:
+        type: external
+        display: %t_id%
+        table: tickets
+        

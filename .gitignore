@@ -1,0 +1,7 @@
+/vendor/
+*.lock
+/htdocs/extmod/
+/tmp/
+/nbproject/private/
+/htdocs/bootstrap.php
+*.xcf

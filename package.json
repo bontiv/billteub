@@ -1,0 +1,15 @@
+{
+  "name": "Billets",
+  "version": "1.0.0",
+  "description": "Billeterie pour Epitanime",
+  "main": "index.js",
+  "author": "Bontiv <bontiv@epitanime.com>",
+  "license": "LGPL-3.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.*",
+    "ckeditor": "4.*",
+    "eonasdan-bootstrap-datetimepicker": "4.*",
+    "jquery": "3.*"
+  }
+}

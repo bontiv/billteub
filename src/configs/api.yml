@@ -1,0 +1,6 @@
+name: api
+label: API
+fields:
+    rsakey:
+        type: text
+        label: Clé RSA privé

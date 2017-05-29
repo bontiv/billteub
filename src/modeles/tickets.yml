@@ -1,0 +1,40 @@
+## YAML Template.
+---
+name: tickets
+key: t_id
+fields:
+    t_id:
+        type: auto_int
+    t_ctx:
+        type: external
+        table: contacts
+        display: %ctx_firstname% %ctx_lastname%
+        label: Contact
+    t_type:
+        type: external
+        table: ticketTypes
+        display: %ttype_title%
+        label: Type
+    t_endlife:
+        type: date_time
+        label: Fin de vie du ticket
+    t_user:
+        type: external
+        label: Acheteur
+        table: users
+        display: %user_intra%
+    t_barcode:
+        type: var
+        label: Code bar
+        null: true
+    t_status:
+        type: enum
+        label: Status
+        default: TMP
+        items:
+            TMP: Temporaire
+            WAIT: En modération
+            RSV: Réservé
+            PAID: Payé
+            VALID: Validé
+            CANCEL: Billet annulé

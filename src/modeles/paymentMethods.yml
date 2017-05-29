@@ -1,0 +1,21 @@
+## YAML Template.
+---
+name: paymentMethods
+key: pm_key
+fields:
+    pm_key:
+        type: auto_int
+    pm_title:
+        type: var
+        label: Titre
+    pm_config:
+        type: external
+        table: paymentConfigs
+        display: %pc_title%
+        label: Configuration associée
+    pm_class:
+        type: var
+        label: Classe controleur
+    pm_configuration:
+        type: text
+        label: Configuration

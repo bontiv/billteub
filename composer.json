@@ -1,0 +1,46 @@
+{
+    "name": "epitanime/tickets",
+    "description": "Vente de billets en ligne",
+    "type": "project",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Bontiv",
+            "email": "bontiv@epitanime.com",
+            "role": "Manager"
+        }
+    ],
+    "support": {
+        "email": "technique@epitanime.com",
+        "issues": "https://dev.epitanime.com"
+    },
+    "require": {
+        "smarty/smarty": "v3.*",
+        "setasign/fpdf": "1.*",
+        "dapphp/securimage": "3.*",
+        "phpmailer/phpmailer": "v5.*",
+        "mustangostang/spyc": "0.*",
+        "jumbojett/openid-connect-php": "0.*",
+        "paypal/rest-api-sdk-php": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libs\\": "src/libs/",
+            "ticketgen\\": "src/libs/ticketgen/"
+        },
+        "classmap": [
+            "src/libs/"
+        ],
+        "files": [
+            "vendor/setasign/fpdf/makefont/makefont.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "yarn install --global-folder htdocs/ --modules-folder htdocs/extmod/ --prod --flat"
+        ],
+        "post-update-cmd": [
+            "yarn upgrade --global-folder htdocs/ --modules-folder htdocs/extmod/ --prod --flat"
+        ]
+    }
+}

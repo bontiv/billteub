@@ -1,0 +1,27 @@
+## YAML Template.
+---
+name: eventUsers
+key: eu_id
+fields:
+    eu_id:
+        type: auto_int
+    eu_user:
+        type: external
+        table: users
+        display: %user_intra%
+        label: Utilisateur
+    eu_event:
+        type: external
+        table: events
+        label: Événement
+        display: %event_title%
+    eu_access:
+        type: enum
+        label: Access
+        default: CHECK
+        items:
+            CHECK: Validation
+            RESELLER: Revendeur
+            VIEWER: Visualisation
+            ADMIN: Administrateur
+            

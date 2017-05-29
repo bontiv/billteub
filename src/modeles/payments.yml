@@ -1,0 +1,50 @@
+## YAML Template.
+---
+name: payments
+key: pay_id
+fields:
+    pay_id:
+        type: auto_int
+    pay_amount:
+        type: int
+        label: Montant
+    pay_date:
+        type: date_time
+        label: Date exec
+    pay_datevalidation:
+        type: date_time
+        label: Date exec
+        null: true
+    pay_endlife:
+        type: date_time
+        label: Date exec
+        null: true
+    pay_transaction:
+        type: var
+        size: 150
+        null: true
+    pay_user:
+        type: external
+        table: users
+        display: %user_intra%
+        label: Utilisateur
+    pay_method:
+        type: external
+        table: paymentMethods
+        display: %pm_title%
+        label: Methode de payment
+    pay_data:
+        type: text
+        label: Payment data
+        default: ""
+    pay_state:
+        type: enum
+        label: Statut
+        default: WAIT
+        items:
+            WAIT: En attente
+            ACCEPT: Accepté
+            DENIED: Refusé
+            CANCELED: Annulé
+            MANUAL: Validation manuelle
+            
