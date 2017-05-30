@@ -1,7 +1,7 @@
 {
   "name": "Billets",
   "version": "1.0.0",
-  "description": "Billeterie pour Epitanime",
+  "description": "Billeterie pour LATEB",
   "main": "index.js",
   "author": "Bontiv <bontiv@epitanime.com>",
   "license": "LGPL-3.0",

@@ -1,5 +1,5 @@
 {
-    "name": "epitanime/tickets",
+    "name": "lateb/tickets",
     "description": "Vente de billets en ligne",
     "type": "project",
     "license": "LGPL-3.0",
@@ -11,7 +11,7 @@
         }
     ],
     "support": {
-        "email": "technique@epitanime.com",
+        "email": "contact@lateb.eu",
         "issues": "https://dev.epitanime.com"
     },
     "require": {

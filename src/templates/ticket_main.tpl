@@ -4,7 +4,7 @@ L'événement se déroule du {$ticket->t_type->ttype_event->event_start|date_for
 
 Une carte d'identité vous sera demandée à l'entrée.
 
-Pour rappel, EPITANIME se situe au :
+Pour rappel, LATEB se situe au :
 24 rue Pasteur
 94270 LE KREMLIN-BICÊTRE
 
