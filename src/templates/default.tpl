@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{mkurl action="index"}">Billeterie EPITANIME</a>
+                <a class="navbar-brand" href="{mkurl action="index"}">Billeterie LATEB</a>
             </div>
 
 

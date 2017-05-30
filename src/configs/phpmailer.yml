@@ -16,11 +16,11 @@ fields:
     from:
         type: var
         label: Adresse d'expédition
-        default: "intra@epitanime.com"
+        default: "contact@lateb.eu"
     from_name:
         type: var
         label: Nom d'expédition
-        default: "Intra EPITANIME"
+        default: "Intra LATEB"
     smtp_host:
         type: var
         label: serveur SMTP
@@ -32,11 +32,11 @@ fields:
     smtp_auth_user:
         type: var
         label: Utilisateur SMTP
-        default: "intra@epitanime.com"
+        default: "contact@lateb.eu"
     smtp_auth_pass:
         type: var
         label: Mot de passe SMTP
-        default: "Intra EPITANIME"
+        default: "Intra LATEB"
     smtp_enc:
         type: enum
         label: Sécurité SMTP

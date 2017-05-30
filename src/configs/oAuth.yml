@@ -14,5 +14,4 @@ fields:
     client_url:
         type: var
         label: API Endpoint
-        default: http://intra.epitanime.com/api.php
-        
+        default: http://intra.lateb.eu/api.php
